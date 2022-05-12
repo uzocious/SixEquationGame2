@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anpProfile" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1270.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ProfileController">
+   <children>
+      <ImageView fitHeight="444.0" fitWidth="370.0" layoutX="758.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/hi.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="262.0" fitWidth="181.0" layoutX="203.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/pfp.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="582.0" layoutY="26.0" orientation="VERTICAL" prefHeight="659.0" prefWidth="13.0" />
+      <Label fx:id="lblAvatarName" alignment="CENTER" layoutX="16.0" layoutY="401.0" prefHeight="55.0" prefWidth="556.0" text="N/A" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="46.0" style="-fx-background-color: black;" text="Avatar" textFill="#17ae1f">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHighestScore" alignment="CENTER" layoutX="856.0" layoutY="95.0" prefHeight="141.0" prefWidth="174.0" text="N/A" textAlignment="CENTER" textFill="#cf1313">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+      <Separator layoutX="24.0" layoutY="500.0" prefHeight="17.0" prefWidth="540.0" />
+      <Label layoutX="24.0" layoutY="524.0" style="-fx-background-color: black;" text="Player Server Information" textFill="#17ae1f" underline="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button layoutX="1142.0" layoutY="27.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="38.0" prefWidth="102.0" text="⮈ Go Back" />
+      <Label layoutX="24.0" layoutY="563.0" text="IP Address:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="608.0" text="Location:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="653.0" text="Timezone:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblIPAddress" layoutX="160.0" layoutY="563.0" prefHeight="21.0" prefWidth="399.0" text="N/A" />
+      <Label fx:id="lblLocation" layoutX="160.0" layoutY="608.0" prefHeight="21.0" prefWidth="399.0" text="N/A" />
+      <Label fx:id="lblTimeZone" layoutX="160.0" layoutY="653.0" prefHeight="21.0" prefWidth="399.0" text="N/A" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anpGamePlay" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1270.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.GamePlayController">
+   <children>
+      <ImageView fx:id="imvGameView" fitHeight="498.0" fitWidth="882.0" layoutX="22.0" layoutY="132.0" pickOnBounds="true" />
+      <ImageView fitHeight="74.0" fitWidth="77.0" layoutX="1113.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/heart.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="122.0" fitWidth="152.0" layoutX="1060.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/hand_time.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="22.0" layoutX="22.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/pfp.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblAvtName" layoutX="51.0" layoutY="32.0" text="Welcome" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnProfile" layoutX="1018.0" layoutY="26.0" mnemonicParsing="false" onAction="#Profile" prefHeight="40.0" prefWidth="103.0" text="Profile" />
+      <Button layoutX="1142.0" layoutY="26.0" mnemonicParsing="false" onAction="#Logout" prefHeight="40.0" prefWidth="103.0" text="Logout" />
+      <ImageView fitHeight="49.0" fitWidth="295.0" layoutX="502.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/se_logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblLivesRemaining" layoutX="1052.0" layoutY="116.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="89.0" />
+         </font>
+      </Label>
+      <Separator layoutX="953.0" layoutY="104.0" orientation="VERTICAL" prefHeight="587.0" prefWidth="22.0" />
+      <Label layoutX="990.0" layoutY="280.0" text="Score:">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLiveScore" layoutX="1157.0" layoutY="280.0" text="-">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="993.0" layoutY="352.0" text="Highest:">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblHighestScore" layoutX="1157.0" layoutY="352.0" text="-">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCountdown" layoutX="1071.0" layoutY="593.0" text="10.00">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="91.0" text="What is the value of the Heart?" textFill="#0fc333">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="637.0" layoutY="651.0" mnemonicParsing="false" onAction="#GameActionPerformed" prefHeight="40.0" prefWidth="52.0" text="7" textFill="#c9b203">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="77.0" layoutY="651.0" mnemonicParsing="false" onAction="#GameActionPerformed" prefHeight="40.0" prefWidth="52.0" text="0" textFill="#c9b203">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="157.0" layoutY="651.0" mnemonicParsing="false" onAction="#GameActionPerformed" prefHeight="40.0" prefWidth="52.0" text="1" textFill="#c9b203">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="717.0" layoutY="651.0" mnemonicParsing="false" onAction="#GameActionPerformed" prefHeight="40.0" prefWidth="52.0" text="8" textFill="#c9b203">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="237.0" layoutY="651.0" mnemonicParsing="false" onAction="#GameActionPerformed" prefHeight="40.0" prefWidth="52.0" text="2" textFill="#c9b203">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="797.0" layoutY="651.0" mnemonicParsing="false" onAction="#GameActionPerformed" prefHeight="40.0" prefWidth="52.0" text="9" textFill="#c9b203">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="317.0" layoutY="651.0" mnemonicParsing="false" onAction="#GameActionPerformed" prefHeight="40.0" prefWidth="52.0" text="3" textFill="#c9b203">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="397.0" layoutY="651.0" mnemonicParsing="false" onAction="#GameActionPerformed" prefHeight="40.0" prefWidth="52.0" text="4" textFill="#c9b203">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="477.0" layoutY="651.0" mnemonicParsing="false" onAction="#GameActionPerformed" prefHeight="40.0" prefWidth="52.0" text="5" textFill="#c9b203">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="557.0" layoutY="651.0" mnemonicParsing="false" onAction="#GameActionPerformed" prefHeight="40.0" prefWidth="52.0" text="6" textFill="#c9b203">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
